@@ -2,67 +2,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hosted site</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>Frames</title>
 </head>
-<body style="padding: 5% 10%;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;">
-    <h1 style='text-align: center;'> Demo site hosted</h1>
-    <p>
-        Lorem ipsum dolor <e>sit amet, consectetur</e>sit amet,<b>Nam maximus mollis augue</b> consectetur adipiscing elit. Cras maximus lorem ac urna sagittis tempor. Sed finibus
-        egestas purus ac finibus. Nulla rhoncus lorem ac massa faucibus rhoncus. Phasellus vulputate porta dolor eget
-        hendrerit. <strong>Ut mattis interdum tortor</strong>Integer imperdiet, enim non dictum ultrices, nulla ex feugiat quam, sit amet sagittis magna augue sit
-        amet tortor. Ut mattis interdum tortor, a rhoncus mi vehicula non. Nam maximus mollis augue. Sed ut scelerisque
-        nunc, ut euismod mauris. Mauris sit amet pellentesque turpis.
-         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus lorem ac urna sagittis tempor. Sed
-         finibus
-         egestas purus ac finibus. Nulla rhoncus lorem ac massa faucibus rhoncus. Phasellus vulputate porta dolor eget
-         hendrerit. Integer imperdiet, enim non dictum ultrices, nulla ex feugiat quam, sit amet sagittis magna augue
-         sit
-    </p>
-    <p>     
-         <i>amet tortor. Ut mattis interdum tortor, a rhoncus mi vehicula non. Nam maximus mollis augue. Sed ut scelerisque
-        nunc, ut euismod mauris. Mauris sit amet pellentesque turpis.</i>
-    </p>
-    <q>dictum ultrices, nulla ex feugiat quam</q>
-    <hr>
-    <h2 style="text-align: center;">Pokemon</h2>
-    <table border='1' align="center">
-        <thead>
-            <tr>
-                <th>Image</th>
-                <th>Name</th>
-                <th>Type</th>
-                <th>Evolution info</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><img
-                        src="http://img4.wikia.nocookie.net/__cb20140328190757/pokemon/images/thumb/2/21/001Bulbasaur.png/200px-001Bulbasaur.png">
-                </td>
-                <td>Bulbasaur</td>
-                <td> Grass/Poison</td>
-                <td><a href="http://pokemon.wikia.com/wiki/Ivysaur ">Ivysaur</a></td>
-            </tr>
-            <tr>
-                <td><img
-                        src="http://img4.wikia.nocookie.net/__cb20140724195345/pokemon/images/thumb/7/73/004Charmander.png/200px-004Charmander.png">
-                </td>
-                <td>Charmander</td>
-                <td> Fire</td>
-                <td><a href="http://pokemon.wikia.com/wiki/Charmeleon">Charmeleon</a></td>
-            </tr>
 
-            <tr>
-                <td><img
-                        src="http://img1.wikia.nocookie.net/__cb20140328191525/pokemon/images/thumb/3/39/007Squirtle.png/200px-007Squirtle.png">
-                </td>
-                <td>Squirtle</td>
-                <td> Water</td>
-                <td><a href="http://pokemon.wikia.com/wiki/Wartortle">Wartortle</a></td>
-            </tr>
-        </tbody>
-    </table>
+<body>
+    <div id="header">
+        <h1>HTML Demo Examples</h1>
+    </div>
     <hr>
-        <footer>-Prathamesh</footer>
+    <div class="wrapper">
+        <div id="sidebar">
+            <ul>
+                <li>
+                    <a href='./display/default.html' target="screen">Home</a>
+                </li>
+                <li>
+                    <a href='./display/paragraph.html' target="screen">Paragraphs</a>
+                </li>
+                <li>
+                    <a href='./display/table.html' target="screen">Tables</a>
+                </li>
+                <li>
+                    <a href='./display/list.html' target="screen">List</a>
+                </li>
+               <li>
+                    <a href='./display/frame.html' target="screen">Frame</a>
+                </li>
+            </ul>
+        </div>
+            <iframe name="screen" src='./display/default.html'></iframe>
+    </div>
+
 </body>
+
 </html>
