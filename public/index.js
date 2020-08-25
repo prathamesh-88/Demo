@@ -1,7 +1,7 @@
-$(".element").on("click",(cur) =>{
+$(".element").on("click",function(){
     console.log("clicked");
     $(".element").removeClass("active");
-    $(cur.target.parentNode).addClass("active")
+    $(this).addClass("active")
 });
 
 const calculate = ()=>{
@@ -15,7 +15,7 @@ const calculate = ()=>{
         if(tdate.getDate() < date.getDate())
             age--;
     }
-    $("#resultdisp").text(age);
+    $("#resultdisp").text(`You are ${age} years old`);
 }
 
 $("#result").on("click",calculate)

@@ -2,18 +2,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+     <link rel="stylesheet" href="../public/style.css">
     <style>
-        .wrapper{
+        .card{
             display: flex;
             align-items: stretch;
+            margin-bottom: 20px;
         }
     </style>
     <title>Lists</title>
 </head>
-<body style="padding: 5% 10%;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;font-size: 20px;">
+<body style="padding: 5% 10%;font-size:1.1em">
 <h1 style='text-align: center;'>Lists</h1>
-<h3>Ordered Lists</h3>
-<div class="wrapper">
+
+<div class="card">
+    <h3>Ordered Lists</h3>
     <ol type="1">
         <li>Coffee</li>
         <li>Tea</li>
@@ -40,8 +44,8 @@
         <li>Milk</li>
     </ol>
 </div>
-<h3>Unordered Lists</h3>
-<div class="wrapper">
+<div class="card">
+    <h3>Unordered Lists</h3>
     <ul type="disc">
         <li>Cat</li>
         <li>Dog</li>
@@ -58,17 +62,19 @@
         <li>Mouse</li>
     </ul>
 </div>
-<h3>Description Lists</h3>
-<div class="wrapper">
-    <dl>
+
+<div class="card">
+    <h3>Description Lists</h3>
+    <dl style="margin-left:20px">
         <dt>Coffee</dt>
         <dd>- black hot drink</dd>
         <dt>Milk</dt>
         <dd>- white cold drink</dd>
     </dl>
 </div>
-<h3>Nested</h3>
-<div class="wrapper">
+
+<div class="card">
+    <h3>Nested list</h3>
     <ul>
         <li>first item</li>
         <li>second item
