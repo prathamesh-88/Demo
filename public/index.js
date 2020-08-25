@@ -1,21 +1,40 @@
+//Functions
+function randomNum(num) {
+    return Math.floor(Math.random() * num + 1);
+}
+
+function generateRandomColor() {
+    var r = randomNum(255);
+    var g = randomNum(255);
+    var b = randomNum(255);
+
+    return ("rgb(" + r + ", " + g + ", " + b + ")");
+}
+
+const calculate = () => {
+    let date = new Date($("#date").val());
+    let tdate = new Date();
+    let age = tdate.getFullYear() - date.getFullYear();
+    if (tdate.getMonth() < date.getMonth()) {
+        age--;
+    } else if (tdate.getMonth() == date.getMonth()) {
+        if (tdate.getDate() < date.getDate())
+            age--;
+    }
+    $("#resultdisp").text(`You are ${age} years old`);
+}
+
+//Event listeners
+
 $(".element").on("click",function(){
     console.log("clicked");
     $(".element").removeClass("active");
     $(this).addClass("active")
 });
 
-const calculate = ()=>{
-    let date = new Date($("#date").val());
-    let tdate = new Date();
-    let age = tdate.getFullYear()-date.getFullYear();
-    if(tdate.getMonth() < date.getMonth()){
-        age--;
-    }
-    else if (tdate.getMonth() == date.getMonth()){
-        if(tdate.getDate() < date.getDate())
-            age--;
-    }
-    $("#resultdisp").text(`You are ${age} years old`);
-}
 
-$("#result").on("click",calculate)
+$("#result").on("click",calculate);
+
+$("#changeColor").on("click",function(){
+    $("body").css(`background-color` , `${generateRandomColor()}`);
+});
