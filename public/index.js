@@ -1,7 +1,11 @@
 $(".element").on("click",(cur) =>{
     console.log("clicked");
     $(".element").removeClass("active");
-    $(cur.target.parentNode).addClass("active")
+    if ($(cur.target).hasClass("element")) {
+        $(cur.target).addClass("active")
+    } else {
+        $(cur.target.parentNode).addClass("active")
+    }
 });
 
 const calculate = ()=>{
