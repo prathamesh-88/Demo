@@ -1,3 +1,9 @@
+:root{
+    --main-bg-color: linear-gradient(to right, #ff416c, #ff4b2b);
+    --sidebar-primary: #232323;
+    --sidebar-sec: #ff416c;
+}
+
 body{
     margin: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -7,12 +13,12 @@ iframe {
     float: right;
     width:100%;
     border: none;
-    background-color: #ff4f58;
+    background-image: var(--main-bg-color);
 }
 
 #header{
     height: 10%;
-    background-color: #232323;
+    background-color: var(--sidebar-primary);
 }
 
 hr{
@@ -33,7 +39,7 @@ hr{
     height: 100vh;
     width: 40%;
     max-width: 250px;
-    background-color: #232323;
+    background-color: var(--sidebar-primary);
 }
 
 #sidebar ul{
@@ -49,15 +55,21 @@ hr{
 
 #sidebar ul li a{
      text-decoration: none;
+     width: 100%;
+     height: 100%;
+     display: block;
      color: whitesmoke;
      font-size: 18px;
-     margin-left: 20px;
+     padding-left: 20px;
+     
 }
 
-#sidebar ul li:hover {
-    color: #232323;
-    background-color: #ff4f58;
+#sidebar ul li:hover, .active {
+    color: var(--sidebar-primary);
+    background-color: var(--sidebar-sec);
 }
+
+
 
 .wrapper{
     display: flex;
