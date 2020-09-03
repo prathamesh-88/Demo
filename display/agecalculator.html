@@ -8,7 +8,7 @@
         .card{
             font-size:2em;
             margin-top: 10%;
-            height: 30%;
+            height: fit-content;
             text-align: center;
             width: 40%;
             font-weight: bold;
@@ -23,6 +23,19 @@
             background-color: #ff416c;
             border-radius: 5px;
             height:40px;
+        }
+        @media (max-width:700px){
+            .card{
+                font-size: 1.5em;
+                width: 300px;
+                padding: 10px 0;
+            }
+            input[type ="date"],button{
+            font-size: 1em;
+            }
+            button{
+                height: 30px;
+            }
         }
     </style>
     <title>Document</title>

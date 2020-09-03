@@ -32,9 +32,19 @@ $(".element").on("click",function(){
     $(this).addClass("active")
 });
 
+$("#expand-btn").on("click",function(){
+    $('#sidebar').toggleClass("expand");
+});
 
 $("#result").on("click",calculate);
 
 $("#changeColor").on("click",function(){
     $("body").css(`background-color` , `${generateRandomColor()}`);
 });
+
+if($(window).width()<= 700){
+    $(".element,iframe").on("click", function () {
+        $('#sidebar').toggleClass("expand");
+    });
+
+}
