@@ -43,8 +43,13 @@ $("#changeColor").on("click",function(){
 });
 
 if($(window).width()<= 700){
-    $(".element,iframe").on("click", function () {
+    $(".element").on("click", function () {
         $('#sidebar').toggleClass("expand");
     });
 
 }
+
+$(`input[type=radio]`).on('click',function(){
+    console.log($(this).attr('value'));
+    $(`body`).css(`background-color`,`${$(this).val()}`);
+});
