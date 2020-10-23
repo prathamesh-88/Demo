@@ -1,0 +1,79 @@
+/* Scroll bar */
+#sidebar::-webkit-scrollbar-track
+{
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#sidebar::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: #F5F5F5;
+}
+
+#sidebar::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: rgba(0,0,0,.3);
+}
+
+#sidebar{
+    height: 100vh;
+    width: 40%;
+    max-width: 250px;
+    background-image: var(--sidebar-primary);
+    border-right: solid snow 1px;
+    position: fixed;
+    overflow-y:auto;
+}
+
+#sidebar ul{
+    list-style: none;
+    margin-top: 0;
+    padding-left: 0;
+    color: whitesmoke;
+}
+
+#sidebar ul li{
+    height:30px;
+    padding-top: 5px;
+    border-bottom: solid gray 1px;
+}
+
+#sidebar ul li a{
+     text-decoration: none;
+     width: 100%;
+     height: 100%;
+     display: block;
+     color: whitesmoke;
+     font-size: 18px;
+     padding-left: 20px;
+     
+}
+#sidebar > ul > li.element.collapsible > a > i{
+    margin-left: 25%;
+}
+#sidebar ul li:hover, .active {
+    background-color: var(--sidebar-sec);
+}
+
+#sidebar-header{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 4px 4px black;
+    background-color: #787276;
+    width: 100%;
+    margin:0 0 15px 0;
+    padding: 15px 0;
+    
+}
+
+.fa-caret-down{
+    margin-left: 25%;
+}
+.main-dropdown{
+    background-color : #242424;
+}

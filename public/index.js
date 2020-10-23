@@ -24,10 +24,10 @@ const calculate = () => {
     $("#resultdisp").text(`You are ${age} years old`);
 }
 
+
 //Event listeners
 
 $(".element").on("click",function(){
-    console.log("clicked");
     $(".element").removeClass("active");
     $(this).addClass("active")
 });
@@ -53,3 +53,19 @@ $(`input[type=radio]`).on('click',function(){
     console.log($(this).attr('value'));
     $(`body`).css(`background-color`,`${$(this).val()}`);
 });
+
+$(".main-collapsible").click(function(){
+    console.log("caught");
+    $(".main-dropdown").slideToggle(800);
+});
+
+$(".02-collapsible").click(function(){
+    console.log("caught");
+    $(".02-dropdown").slideToggle(800);
+});
+
+
+$(".02-dropdown").slideUp(800);
+$(".main-dropdown").slideUp(800);
+
+

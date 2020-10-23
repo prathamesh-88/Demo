@@ -1,0 +1,47 @@
+@import "sidebar";
+@import "mobile";
+@import "head";
+
+:root{
+    --main-bg-color: linear-gradient(to right, #ff416c, #ff4b2b);
+    --sidebar-primary: linear-gradient(to right, #232526, #414345);
+    --sidebar-sec: #787276;
+}
+
+
+
+body{
+    margin: 0;
+    font-family: 'Handlee',cursive;
+    overflow-y: auto;
+    
+}
+
+iframe {
+    float: right;
+    width:100%;
+    margin-left:250px;
+    border: none;
+    background:url("../public/background.jpg");
+    background-size: cover;
+    overflow-y: scroll;
+}
+
+
+.card{
+    width: 60%;
+    border: solid lightgray 1px;
+    box-shadow: 2px 2px 5px gray;
+    padding:15px 30px;
+    margin: auto;
+    text-align: justify;
+    border-radius: 5px;
+    font-family: 'Handlee',cursive;
+    background-color: white;
+}
+
+
+
+
+
+
