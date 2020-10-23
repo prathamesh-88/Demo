@@ -4,6 +4,7 @@
     --sidebar-sec: #787276;
 }
 
+
 body{
     margin: 0;
     font-family: 'Handlee',cursive;
@@ -64,7 +65,9 @@ iframe {
      padding-left: 20px;
      
 }
-
+#sidebar > ul > li.element.collapsible > a > i{
+    margin-left: 25%;
+}
 #sidebar ul li:hover, .active {
     background-color: var(--sidebar-sec);
 }
