@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  color: #C6E5F5;
+}
+
+body {
+  background-image: radial-gradient(50% 50% at 50% 50%, #77787E 0%, #2A364A 100%);
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.header-container {
+  width: 100vw;
+  height: 15%;
+}
+
+.header-container header {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.header-logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-logo img {
+  width: 3rem;
+  margin-right: 2rem;
+}
+
+.header-logo h2 {
+  font-size: 1em;
+}
+
+ul {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+ul li a {
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #C6E5F5;
+  border: 1px solid #C6E5F5;
+  padding: 0.7rem 3rem;
+  border-radius: 25px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+ul li a:hover {
+  background-color: #C6E5F5;
+  color: #2A364A;
+}
+
+ul .active {
+  background-color: #C6E5F5;
+  color: #2A364A;
+}
+
+.container {
+  width: 90%;
+  height: 85%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+}
+
+.container .image {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  width: 45vw;
+  max-width: 600px;
+  min-width: 350px;
+  background-image: url("../images/watch.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  bottom: 0;
+}
+
+.container .caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 5rem;
+  padding-top: 6rem;
+}
+
+.container .caption h1 {
+  color: white;
+  font-size: 4em;
+}
+
+.container .caption p {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */

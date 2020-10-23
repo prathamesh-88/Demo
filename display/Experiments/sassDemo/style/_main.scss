@@ -1,0 +1,36 @@
+$textcolor : #C6E5F5;
+
+.container{
+    width: 90%;
+    height: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    .image{
+        flex:2;
+        width: 45vw;
+        max-width: 600px;
+        min-width: 40S0px;
+        background-image: url("../images/watch.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        bottom:0;
+    }
+    .caption{
+        display:flex;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+        padding-left: 5rem;
+        padding-top: 6rem;
+        h1{
+            color: white;
+            font-size: 4em;
+        }
+        p{
+            font-size:1.5em;
+            font-weight: bold;
+        }
+    }
+}

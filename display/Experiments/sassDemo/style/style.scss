@@ -1,0 +1,22 @@
+$textcolor : #C6E5F5;
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    color: $textcolor;
+}
+
+body{
+    background-image: radial-gradient(50% 50% at 50% 50%, #77787E 0%, #2A364A 100%);
+}
+.wrapper{
+    max-width: 1920px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+@import "./header";
+@import "./main";
+
