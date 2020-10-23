@@ -1,9 +1,9 @@
 @import "sidebar";
-@import "mobile";
+
 @import "head";
 
 :root{
-    --main-bg-color: linear-gradient(to right, #ff416c, #ff4b2b);
+    --main-bg-color: linear-gradient(to right, #992540, #ff4b2b);
     --sidebar-primary: linear-gradient(to right, #232526, #414345);
     --sidebar-sec: #787276;
 }
@@ -22,7 +22,7 @@ iframe {
     width:100%;
     margin-left:250px;
     border: none;
-    background:url("../public/background.jpg");
+    background:var(--main-bg-color);
     background-size: cover;
     overflow-y: scroll;
 }
@@ -43,5 +43,5 @@ iframe {
 
 
 
-
+@import "mobile";
 
