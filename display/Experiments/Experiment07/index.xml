@@ -1,0 +1,30 @@
+<LIBRARY>
+<BOOK>
+    <TITLE>The Psychology of Money</TITLE>
+    <AUTHOR>Morgan Housel</AUTHOR>
+    <PAGES>202</PAGES>
+    <YEAR>1998</YEAR>
+    <GENRE>Informative</GENRE>
+</BOOK>
+<BOOK>
+    <TITLE>Rich Dad poor Dad</TITLE>
+    <AUTHOR>Robert Kiyosaki</AUTHOR>
+    <PAGES>250</PAGES>
+    <YEAR>2005</YEAR>
+    <GENRE>Finance</GENRE>
+</BOOK>
+<BOOK>
+    <TITLE>Zero to One</TITLE>
+    <AUTHOR>Peter Theil</AUTHOR>
+    <PAGES>400</PAGES>
+    <YEAR>2006</YEAR>
+    <GENRE>Fiction</GENRE>
+</BOOK>
+<BOOK>
+    <TITLE>Hit Refresh</TITLE>
+    <AUTHOR>Satya Nadella</AUTHOR>
+    <PAGES>250</PAGES>
+    <YEAR>2010</YEAR>
+    <GENRE>Motivational</GENRE>
+</BOOK>
+</LIBRARY>
