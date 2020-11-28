@@ -64,8 +64,14 @@ $(".02-collapsible").click(function(){
     $(".02-dropdown").slideToggle(800);
 });
 
+$(".04-collapsible").click(function(){
+    console.log("caught");
+    $(".04-dropdown").slideToggle(800);
+});
+
 
 $(".02-dropdown").slideUp(800);
+$(".04-dropdown").slideUp(800);
 $(".main-dropdown").slideUp(800);
 
 
